@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Header from "./components/Header"
 
 export default function Home() {
@@ -24,9 +23,9 @@ export default function Home() {
                     src={"https://s3-alpha-sig.figma.com/img/fe76/04e4/1f537eb50b863f64bbaa65861287126e?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LJW8Rgl2FTUoU7R-DRXe2r4wqhMr3BIRIE28XRj9Crbw7dsItxqpSkSbU6EuujWzGc~m~PkvVL3wSqhUkWXlnpga7wucLht6W-QQ~5npMm1FSMbFDJ4decxfs2b~wiljgfnkNDLq2DEYO0SPzjZF97R7Yv246yKDfA7xpiXdX-w50keM0XgzZjl9zPLGuj~dY98qfyxIncPBk5jwEly0h1QeHP0OvXOFjZxOHqxqip-yOt7sRV05JHzZMuqtiLMX572v0LCQucHCAPfPX78jCCyRYDbjkKw1ZqIYHHYYYYtuBFV-BfDD-cAjZcIcmirWqAry0oKDYCFjpEzI-mz5RA__"}
                     alt="sapmle image"
                     width={345}
-                    height={10}
+                    height={100}
                     className="rounded-tl-[100] rounded-br-[100]"
-                    />
+                     />
                 </div>
             </div>
         </div>
