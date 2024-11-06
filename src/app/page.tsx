@@ -1,101 +1,37 @@
-import Image from "next/image";
+import Link from "next/link"
+import Header from "./components/Header"
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return(
+        <div className="h-screen">
+            <Header />
+            <div className="flex justify-between items-center 
+            mx-[122] mt-[50] px-0">
+                <div className="font-libre flex flex-col space-y-7">
+                    <h1 className="font-bold text-[30px] w-[450]">IMPECCABLE CRAFTSMANSHIP AND FINESSE</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                    <p className="w-[575px] font-medium text-[22px] text-primary">
+                        An example of intricate workmanship and detail, elegant necklaces and long and short chains form a part of our desirable collection.
+                    </p>
+                    <button className="bg-[#A29875] text-white h-[45] w-[200] text-[22px] 
+                    font-medium font-Libre Bodoni rounded-lg">
+                        Explore Now
+                    </button>
+                </div>
+                <div className="mr-[65]">
+                        <div className="absolute rounded-tl-[100] rounded-br-[100] w-[310px] h-[423px] border-[1px] border-white mt-6 ml-4"></div>
+                    <img 
+                    src={"https://s3-alpha-sig.figma.com/img/fe76/04e4/1f537eb50b863f64bbaa65861287126e?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LJW8Rgl2FTUoU7R-DRXe2r4wqhMr3BIRIE28XRj9Crbw7dsItxqpSkSbU6EuujWzGc~m~PkvVL3wSqhUkWXlnpga7wucLht6W-QQ~5npMm1FSMbFDJ4decxfs2b~wiljgfnkNDLq2DEYO0SPzjZF97R7Yv246yKDfA7xpiXdX-w50keM0XgzZjl9zPLGuj~dY98qfyxIncPBk5jwEly0h1QeHP0OvXOFjZxOHqxqip-yOt7sRV05JHzZMuqtiLMX572v0LCQucHCAPfPX78jCCyRYDbjkKw1ZqIYHHYYYYtuBFV-BfDD-cAjZcIcmirWqAry0oKDYCFjpEzI-mz5RA__"}
+                    alt="sapmle image"
+                    width={345}
+                    height={10}
+                    className="rounded-tl-[100] rounded-br-[100]"
+                    />
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+
+
+    )
 }
